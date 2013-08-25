@@ -1,0 +1,32 @@
+<template name="add_project">
+    <div class="container">
+        <form class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Add New Project</legend>
+
+                <!-- Text input-->
+                <div class="control-group">
+                    <label class="control-label" for="project_name">Project Name</label>
+                    <div class="controls">
+                        <input id="project_name" name="project_name" type="text" placeholder="" class="input-xlarge" required="">
+
+                    </div>
+                </div>
+
+                <!-- Multiple Checkboxes -->
+                <div class="control-group">
+                    <label class="control-label" for="self_developer"></label>
+                    <div class="controls">
+                        <label class="checkbox" for="self_developer-0">
+                            <input type="checkbox" name="self_developer" id="self_developer-0" value="Automatically add yourself as this project's developer">
+                            Automatically add yourself as this project's developer
+                        </label>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+</template>
