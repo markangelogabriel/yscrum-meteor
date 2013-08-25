@@ -1,6 +1,6 @@
 <template name="add_project">
     <div class="container">
-        <form class="form-horizontal">
+        <form class="form-horizontal" method="post">
             <fieldset>
 
                 <!-- Form Name -->
@@ -10,23 +10,32 @@
                 <div class="control-group">
                     <label class="control-label" for="project_name">Project Name</label>
                     <div class="controls">
-                        <input id="project_name" name="project_name" type="text" placeholder="" class="input-xlarge" required="">
+                        <input id="project_name" name="project_name" type="text" placeholder="YSES Online" class="input-xlarge" required="">
 
                     </div>
                 </div>
 
                 <!-- Multiple Checkboxes -->
                 <div class="control-group">
-                    <label class="control-label" for="self_developer"></label>
+                    <label class="control-label" for=""></label>
                     <div class="controls">
-                        <label class="checkbox" for="self_developer-0">
-                            <input type="checkbox" name="self_developer" id="self_developer-0" value="Automatically add yourself as this project's developer">
-                            Automatically add yourself as this project's developer
+                        <label class="checkbox" for="-0">
+                            <input type="checkbox" name="" id="-0" value="Add yourself as one of the project's developers">
+                            Add yourself as one of the project's developers
                         </label>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="control-group">
+                    <label class="control-label" for="submit"></label>
+                    <div class="controls">
+                        <button id="submit" name="submit" class="btn btn-primary">Add</button>
                     </div>
                 </div>
 
             </fieldset>
         </form>
+
     </div>
 </template>

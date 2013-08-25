@@ -1,0 +1,12 @@
+.ticker{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 400px;
+    height : 200px;
+
+    /*
+        This allows click events to pass through this class
+    */
+    pointer-events:none;
+}
